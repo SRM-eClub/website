@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import localFont from "next/font/local";
 // import Project from "../components/project";
 import Events from "@/components/events";
+import Sponsors from "@/components/sponsors";
 
 const header_font = Poppins({
   subsets: ["latin"],
@@ -154,12 +155,15 @@ export default function Page() {
         id="events"
         className="bg-gradient-to-tl from-gray-800 to-black"
       >
-        <Events font={about_heading_font.className}/>
+        <Events font={about_heading_font.className} />
       </section>
       <section
         id="team"
         className="h-screen bg-gradient-to-bl from-gray-800 to-black"
       ></section>
+      <section id="sponsors" className="h-screen bg-gradient-to-tl from-gray-800 to-black">
+        <Sponsors />
+      </section>
     </main>
   );
 }

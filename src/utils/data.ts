@@ -16,3 +16,12 @@ export const events = [
         registration: "free"
     }
 ]
+
+export const sponsors = [
+    {
+        name: "MECH MINDS",
+        description: "Empowering innovation with Mech-Minds: Your one-stop shop for Arduino, sensors and electronics essentials, fueling hobbyists and professionals alike to bring their projects to life!",
+        website: "https://omni-shop.works",
+        image: "sponsors/omni-works.png"
+    }
+]
