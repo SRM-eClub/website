@@ -161,9 +161,9 @@ export default function Page() {
         id="team"
         className="h-screen bg-gradient-to-bl from-gray-800 to-black"
       ></section>
-      <section id="sponsors" className="h-screen bg-gradient-to-tl from-gray-800 to-black">
+      {/* <section id="sponsors" className="h-screen bg-gradient-to-tl from-gray-800 to-black">
         <Sponsors />
-      </section>
+      </section> */}
     </main>
   );
 }

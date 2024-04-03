@@ -63,7 +63,7 @@ export default function Events({ font }: { font: string }) {
         <h1 className={font + " text-center text-3xl lg:text-6xl w-full p-4"}>
           Arduino Day
         </h1>
-        <div className="h- grid place-items-center w-full bg-[url('/background.webp')] bg-cover rounded-3xl gap-2 p-2 carousel ">
+        <div className="h-screen grid place-items-center w-full bg-[url('/background.webp')] bg-cover rounded-3xl gap-2 p-2 carousel ">
           {events.map((event, index) => (
             <div className="carousel-item">
               <EventCard key={index} {...event} />
