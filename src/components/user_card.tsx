@@ -27,7 +27,7 @@ export default async function UserCard(user: User) {
           <p>{user.description}</p>
           <div className="card-actions justify-center py-2 grid grid-cols-2">
             <Link href={user.linkedin} className="btn btn-primary">Linkedin</Link>
-            <Link href={user.email} className="btn btn-primary">Email</Link>
+            <Link href={"mailto:" + user.email} className="btn btn-primary">Email</Link>
           </div>
         </div>
       </div>
