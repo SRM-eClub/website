@@ -1,6 +1,12 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { events } from "@/utils/data";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 type Event = {
   title: string;
@@ -13,7 +19,7 @@ type Event = {
 
 const EventCard = (event: Event) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full gap-2">
+    <div className={poppins.className + " grid grid-cols-1 lg:grid-cols-2 h-full w-full gap-2"}>
       <div className="h-full w-full bg-slate-500/20 backdrop-blur-2xl place-items-center hidden lg:block rounded-2xl">
         <model-viewer
           src="/events/arduino_uno.gltf"
@@ -30,7 +36,7 @@ const EventCard = (event: Event) => {
       </div>
       <div className="h-full w-full bg-slate-500/20 backdrop-blur-2xl rounded-2xl">
         <div className="grid place-items-center h-full w-full p-4 grid-cols-1 gap-1">
-          <h1 className="text-3xl lg:text-4xl text-center w-full p-2 rounded-lg bg-slate-500/30 backdrop-blur-xl">
+          <h1 className="text-3xl lg:text-6xl text-center w-full p-4 rounded-lg bg-slate-500/30 backdrop-blur-xl">
             {event.title}
           </h1>
           <p className="text-center p-4 rounded-lg bg-slate-500/30 backdrop-blur-xl">

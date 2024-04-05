@@ -25,3 +25,20 @@ export const sponsors = [
         image: "sponsors/omni-works.png"
     }
 ]
+
+export const users = [
+    {
+        name: "Pragati Prithvi",
+        linkedin: "https://www.linkedin.com/in/pragati-prithvi-0a20b4251/",
+        email: "pp5153@srmist.edu.in",
+        photo: "/teams/pragati.jpeg",
+        description: "I'm good, I'm big, I'm sarcastic"
+    },
+    {
+        name: "Shreyas Balihallimath",
+        linkedin: "https://www.linkedin.com/in/shreyas-balihallimath-27485a23a?",
+        email: "sl4865@srmist.edu.in",
+        photo: "/teams/shreyas.jpeg",
+        description: "I'm good, I'm big, I'm sarcastic"
+    }
+]

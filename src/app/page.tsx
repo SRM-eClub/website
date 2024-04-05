@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import localFont from "next/font/local";
 // import Project from "../components/project";
 import Events from "@/components/events";
-import Sponsors from "@/components/sponsors";
+import { users } from "@/utils/data";
+import UserCard from "@/components/user_card";
 
 const header_font = Poppins({
   subsets: ["latin"],
@@ -159,8 +160,23 @@ export default function Page() {
       </section>
       <section
         id="team"
-        className="h-screen bg-gradient-to-bl from-gray-800 to-black"
-      ></section>
+        className="bg-gradient-to-bl from-gray-800 to-black"
+      >
+        <div className="text-center text-3xl lg:text-6xl">
+          <h1 className={about_heading_font.className}>Meet the Team</h1>
+        </div>
+        <div className="grid place-items-center">
+          <div className="grid place-items-center grid-cols-1 lg:grid-cols-3 p-1 lg:p-4 w-fit">
+            {users.map((user, index: number) => {
+              return (
+                <div key={index} className="p-2">
+                  <UserCard {...user} key={index}/>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </section>
       {/* <section id="sponsors" className="h-screen bg-gradient-to-tl from-gray-800 to-black">
         <Sponsors />
       </section> */}
