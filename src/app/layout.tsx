@@ -18,7 +18,6 @@ export default function RootLayout({
         <meta name="description" content="Electronics Club at SRMIST" />
         <title>Electronics Club</title>
         <link rel="icon" href="/favicon.svg" /> 
-        <Script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></Script>
       </head>
       <body className={inter.className + ' overflow-auto'}>{children}</body>
     </html>

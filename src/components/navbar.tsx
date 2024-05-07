@@ -45,9 +45,9 @@ export default function Navbar() {
             <li>
               <Link href="#team">Team</Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="#sponsors">Sponsors</Link>
-            </li>
+            </li> */}
           </ul>
         </div>
         <a className={eclub.className + " btn btn-ghost text-xl"} href="/">eClub</a>
@@ -66,9 +66,9 @@ export default function Navbar() {
           <li>
             <Link href="#team">Team</Link>
           </li>
-          <li>
+          {/* <li>  
             <Link href="#sponsors">Sponsors</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

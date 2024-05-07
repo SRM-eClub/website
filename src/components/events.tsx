@@ -1,7 +1,7 @@
-"use client";
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { events } from "@/utils/data";
 import { Poppins } from "next/font/google";
+import Image from "next/image";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -12,48 +12,44 @@ type Event = {
   title: string;
   description: string;
   time: string;
-  venue: string;
-  model: string;
+  image: string;
   registration: string;
 };
 
-const EventCard = (event: Event) => {
+const EventCard = async (event: Event) => {
   return (
-    <div className={poppins.className + " grid grid-cols-1 lg:grid-cols-2 h-full w-full gap-2"}>
-      <div className="h-full w-full bg-slate-500/20 backdrop-blur-2xl place-items-center hidden lg:block rounded-2xl">
-        <model-viewer
-          src="/events/arduino_uno.gltf"
-          alt="Arduino"
-          iosSrc="../../public/events/arduino_uno.usdz"
-          camera-controls
-          auto-rotate
-          // @ts-ignore
-          style={{ width: "100%", height: "100%" }}
-          touchAction="pan-y"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-        ></model-viewer>
+    <div
+      className={
+        poppins.className +
+        " grid grid-cols-1 lg:grid-cols-2 h-full w-full gap-2"
+      }
+    >
+      <div className="h-full w-full grid place-items-center shrink p-2 bg-slate-500/20 backdrop-blur-2xl rounded-2xl">
+        <Image
+          src={event.image}
+          width={400}
+          height={400}
+          alt={event.title}
+          className="rounded-2xl"
+          priority
+        />
       </div>
-      <div className="h-full w-full bg-slate-500/20 backdrop-blur-2xl rounded-2xl">
-        <div className="grid place-items-center h-full w-full p-4 grid-cols-1 gap-1">
+      <div className="h-full w-full bg-slate-500/20 backdrop-blur-2xl rounded-2xl grid place-items-center">
+        <div className="grid place-items-center h-fit w-full p-4 grid-cols-1 gap-1">
           <h1 className="text-3xl lg:text-6xl text-center w-full p-4 rounded-lg bg-slate-500/30 backdrop-blur-xl">
             {event.title}
           </h1>
           <p className="text-center p-4 rounded-lg bg-slate-500/30 backdrop-blur-xl">
             {event.description}
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 w-full">
+          <div className="grid gap-1 w-full">
             <div className="w-full h-full bg-slate-500/30 backdrop-blur-xl grid place-items-center rounded-lg p-4">
-              <h1 className="text-2xl lg:text-4xl">Time</h1>
+              <h1 className="text-2xl lg:text-4xl">Date</h1>
               <p className="text-xs lg:text-sm">{event.time}</p>
             </div>
             <div className="w-full h-full bg-slate-500/30 backdrop-blur-xl grid place-items-center rounded-lg p-4">
-            <h1 className="text-2xl lg:text-4xl">Venue</h1>
-              <p className="text-xs lg:text-sm">{event.venue}</p>
-            </div>
-            <div className="w-full h-full bg-slate-500/30 backdrop-blur-xl grid place-items-center rounded-lg p-4 col-span-1 lg:col-span-2">
               <h1 className="text-2xl lg:text-4xl">Registration</h1>
-              <p className="text-xs lg:text-sm">{event.registration}</p>              
+              <p className="text-xs lg:text-sm">{event.registration}</p>
             </div>
           </div>
         </div>
@@ -62,7 +58,7 @@ const EventCard = (event: Event) => {
   );
 };
 
-export default function Events({ font }: { font: string }) {
+export default async function Events({ font }: { font: string }) {
   return (
     <div className="py-16 w-full pe-8 ps-8">
       <div className="w-full h-full">
