@@ -31,7 +31,7 @@ export const users = [
     {
         name: "Sayak Roychowdury",
         linkedin: "https://www.linkedin.com/in/sayakrc/",
-        email: "",
+        email: "sr0206@srmist.edu.in",
         photo: "/teams/sayak.jpeg",
         description: "Head"
     },
