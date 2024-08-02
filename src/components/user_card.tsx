@@ -20,7 +20,7 @@ export default async function UserCard(user: User) {
     <div className="grid place-items-center p-2">
       <div className="card w-96 bg-base-100 shadow-xl hover:shadow-2xl duration-500">
         <figure className="p-4 bg-base-200">
-          <Image src={user.photo} alt={user.name} width={300} height={300} className="rounded-full scale-none hover:scale-105 duration-500"/>
+          <Image src={user.photo} alt={user.name || ""} width={300} height={300} className="rounded-full scale-none hover:scale-105 duration-500"/>
         </figure>
         <div className="card-body">
           <h2 className="card-title">{user.name || ""}</h2>
