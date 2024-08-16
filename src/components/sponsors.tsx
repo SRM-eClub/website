@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { sponsors } from "@/utils/data"
 import Link from "next/link";
 

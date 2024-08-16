@@ -24,7 +24,7 @@ const EventCard = async (event: Event) => {
         " grid grid-cols-1 lg:grid-cols-2 h-full w-full gap-2"
       }
     >
-      <div className="h-full w-full grid place-items-center shrink p-2 bg-slate-500/20 backdrop-blur-2xl rounded-2xl">
+      <div className="h-full w-full grid place-items-center shrink p-2 bg-slate-500/20 backdrop-blur-xl rounded-2xl hover:backdrop-blur-3xl duration-500">
         <Image
           src={event.image}
           width={400}
@@ -67,8 +67,8 @@ export default async function Events({ font }: { font: string }) {
         </h1>
         <div className="h-screen grid place-items-center w-full bg-[url('/background.webp')] bg-cover rounded-3xl gap-2 p-2 carousel ">
           {events.map((event, index) => (
-            <div className="carousel-item">
-              <EventCard key={index} {...event} />
+            <div className="carousel-item" key={index}>
+              <EventCard {...event} />
             </div>
           ))}
         </div>

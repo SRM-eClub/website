@@ -8,6 +8,7 @@ import localFont from "next/font/local";
 import Events from "@/components/events";
 import { users } from "@/utils/data";
 import UserCard from "@/components/user_card";
+import Contact from "@/components/contact";
 
 const header_font = Poppins({
   subsets: ["latin"],
@@ -152,27 +153,21 @@ export default function Page() {
       >
         <Project font={about_heading_font.className}/>
       </section> */}
-      <section
-        id="events"
-        className="bg-gradient-to-tl from-gray-800 to-black"
-      >
+      <section id="events" className="bg-gradient-to-tl from-gray-800 to-black">
         <Events font={about_heading_font.className} />
       </section>
-      <section
-        id="team"
-        className="bg-gradient-to-bl from-gray-800 to-black"
-      >
+      <section id="team" className="bg-gradient-to-bl from-gray-800 to-black">
         <div className="text-center text-3xl lg:text-6xl">
           <h1 className={about_heading_font.className}>Meet the Team</h1>
         </div>
         <div className="grid place-items-center">
-          <div className="grid place-items-center grid-cols-1 lg:grid-cols-3 p-1 lg:p-4 w-fit">
+          <div className="grid place-items-center grid-cols- lg:grid-cols-3 p-1 lg:p-4 w-fit">
             {users.map((user, index: number) => {
               return (
                 <div key={index} className="p-2">
-                  <UserCard {...user} key={index}/>
+                  <UserCard {...user} />
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -180,22 +175,12 @@ export default function Page() {
       {/* <section id="sponsors" className="h-screen bg-gradient-to-tl from-gray-800 to-black">
         <Sponsors />
       </section> */}
+      <section
+        id="contact"
+        className="bg-gradient-to-br from-black to-gray-800 p-4"
+      >
+        <Contact />
+      </section>
     </main>
   );
 }
-/*
-The [College Name] Electronics Club is a vibrant community of students passionate about electronics, engineering, and technology. We provide a platform for members to:
-
-Develop their skills: Through workshops, guest lectures, and hands-on projects, you'll gain valuable knowledge and practical experience in various areas of electronics.
-Collaborate with like-minded individuals: Work on exciting projects, participate in competitions, and learn from each other in a supportive environment.
-Turn ideas into reality: Access our makerspace and resources to bring your innovative concepts to life.
-Network with industry professionals: Connect with experts in the field, gain insights into career opportunities, and expand your professional network.
-Have fun! Explore the world of electronics in a fun and interactive way, meet new people, and share your passion with others.
-Whether you're a beginner or a seasoned enthusiast, we welcome you to join our club! We offer opportunities for everyone to learn, grow, and contribute to the world of technology.
-
-Join us and:
-
-Spark your curiosity.
-Build your skills.
-Shape the future.
-*/
