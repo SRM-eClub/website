@@ -8,7 +8,7 @@ import localFont from "next/font/local";
 import Events from "@/components/events";
 import { users } from "@/utils/data";
 import UserCard from "@/components/user_card";
-import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 const header_font = Poppins({
   subsets: ["latin"],
@@ -179,7 +179,7 @@ export default function Page() {
         id="contact"
         className="bg-gradient-to-br from-black to-gray-800 p-4"
       >
-        <Contact />
+        <Footer />
       </section>
     </main>
   );
