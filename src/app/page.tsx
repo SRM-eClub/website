@@ -8,6 +8,7 @@ import localFont from "next/font/local";
 import Events from "@/components/events";
 import { users } from "@/utils/data";
 import UserCard from "@/components/user_card";
+import Image from "next/image";
 import Footer from "@/components/footer";
 
 const header_font = Poppins({
@@ -33,13 +34,15 @@ export default function Page() {
             " grid place-items-center h-screen text-center bg-black/10 p-16"
           }
         >
+          
           <motion.div
             initial={{ opacity: 0, y: "25%" }}
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
-            className="backdrop-blur-2xl bg-white/10 p-16 rounded-3xl"
+            className="backdrop-blur-2xl bg-white/10 p-16 rounded-3xl grid place-items-center"
           >
+            {/* <Image src="/favicon.svg" width={100} height={100} alt="logo" /> */}
             <p className="text-xs lg:text-2xl">
               SRM UNIVERSITY OF SCIENCE AND TEHNOLOGY
             </p>

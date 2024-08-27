@@ -102,16 +102,22 @@ export const users = [
         email: "ss8768@srmist.edu.in"
     },
     {
+        name: "Alapan konar",
+        photo: "/teams/alapan.jpeg",
+        description: "Event Management Lead",
+        linkedin: "https://www.linkedin.com/in/alapan-konar-a5145a226/"
+    },
+    {
+        name: "Muhammed Akmal",
+        linkedin: "https://www.linkedin.com/in/muhammed-akmal-2399b1283/",
+        photo: "/teams/akmal.jpg",
+        description: "Head of Editorial"
+    },
+    {
         name: "Shreyas Balihallimath",
         linkedin: "https://www.linkedin.com/in/shreyas-balihallimath-27485a23a?",
         email: "sl4865@srmist.edu.in",
         photo: "/teams/shreyas.jpeg",
         description: "VLSI Lead"
-    },
-    {
-        name: "Alapan konar",
-        photo: "/teams/alapan.jpeg",
-        description: "Event Management Lead",
-        linkedin: "https://www.linkedin.com/in/alapan-konar-a5145a226/"
     }
 ]
