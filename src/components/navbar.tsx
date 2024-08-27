@@ -2,6 +2,7 @@
 import React from "react";
 import { Orbitron } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 
 const eclub = Orbitron({
   weight: "700",
@@ -10,7 +11,7 @@ const eclub = Orbitron({
 
 export default function Navbar() {
   return (
-    <div className="navbar bg-black/20 backdrop-blur-2xl sticky top-0 z-40">
+    <div className="navbar bg-black/20 backdrop-blur-2xl sticky top-0 z-40 ps-8 pe-8">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,7 +32,7 @@ export default function Navbar() {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 gap-2"
           >
             <li>
               <Link href="#about">About</Link>
@@ -50,7 +51,10 @@ export default function Navbar() {
             </li> */}
           </ul>
         </div>
-        <a className={eclub.className + " btn btn-ghost text-xl"} href="/">eClub</a>
+        <div className={eclub.className + " btn btn-ghost text-xl"}>
+          <Image src="/srm-logo.svg" height={81} width={100} alt="srm-logo" />
+          <Link href="/">eClub</Link>
+        </div>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

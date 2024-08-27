@@ -1,12 +1,36 @@
 import { link } from "fs"
 
 export const events = [
+    // {
+    //     title: "UNO-VATE",
+    //     description: "Get ready to invent , create and amaze to get you through your way to victory at UNO-VATE, our 24-hour Arduino Day hackathon! Compete for a share of our 30,000 prize pool and showcase your Arduino innovation prowess!",
+    //     time: "April 15th - 16th",
+    //     image: "/events/un-vate post.png",
+    //     registration: "₹100 per team"
+    // }
     {
-        title: "UNO-VATE",
-        description: "Get ready to invent , create and amaze to get you through your way to victory at UNO-VATE, our 24-hour Arduino Day hackathon! Compete for a share of our 30,000 prize pool and showcase your Arduino innovation prowess!",
-        time: "April 15th - 16th",
-        image: "/events/un-vate post.png",
-        registration: "₹100 per team"
+        title: "Project Expo",
+        description: "Sparkle creativity, ignite innovation! Join us for an electrifying showcase on Arduino Day, where your projects illuminate the possibilities with our beloved microcontrollers.",
+        time: "3rd September 2024",
+        image: "/events/expo poster.png",
+        registration: "₹100 per team",
+        venue: "UB Lobby"
+    },
+    {
+        title: "Uno-vate",
+        description: "An adrenaline fueled 24 hours to invent, create and amaze! And get a chacne to win a staggeering prize pool of ₹20,000 and more!",
+        time: "31st August 2024",
+        image: "/events/hackathon poster.png",
+        registration: "₹100 per person for SRMIST students, ₹150 per person for non-SRMIST students",
+        venue: "DEI (BEL Lab 5th Floor)"
+    },
+    {
+        title: "MicroQuest",
+        description: "Gear up for hte ultimate Arduino showdown! Join us for the Micro Quest Competition where codingf prowess meets innovation. Dive deep into the world of microcontrollers and unleash your coding wizardry like never before!",
+        time: "2nd September 2024",
+        image: "/events/microquest poster.png",
+        registration: "₹150 per team",
+        venue: "TP 501 - 502"
     }
 ]
 
