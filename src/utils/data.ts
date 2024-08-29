@@ -14,7 +14,8 @@ export const events = [
         time: "3rd September 2024",
         image: "/events/expo poster.png",
         registration: "₹100 per team",
-        venue: "UB Lobby"
+        venue: "UB Lobby",
+        link: "https://docs.google.com/forms/d/1SFOR5G9cibjiU4SAHLYSWfuwpJnyDsgqdJTMOgqzavs/viewform?ts=65eca982&edit_requested=true"
     },
     {
         title: "Uno-vate",
@@ -22,15 +23,26 @@ export const events = [
         time: "31st August 2024",
         image: "/events/hackathon poster.png",
         registration: "₹100 per person for SRMIST students, ₹150 per person for non-SRMIST students",
-        venue: "DEI (BEL Lab 5th Floor)"
+        venue: "DEI (BEL Lab 5th Floor)",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSfTLddKJoDJgEUGd-SxNtYoEtNhvGvo6rlj7xNDZad7Iz0h7w/viewform"
     },
     {
         title: "MicroQuest",
-        description: "Gear up for hte ultimate Arduino showdown! Join us for the Micro Quest Competition where codingf prowess meets innovation. Dive deep into the world of microcontrollers and unleash your coding wizardry like never before!",
+        description: "Gear up for the ultimate Arduino showdown! Join us for the Micro Quest Competition where coding prowess meets innovation. Dive deep into the world of microcontrollers and unleash your coding wizardry like never before!",
         time: "2nd September 2024",
         image: "/events/microquest poster.png",
         registration: "₹150 per team",
-        venue: "TP 501 - 502"
+        venue: "TP 501 - 502",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLScm3quV8-HN7yPnJMiZLTAThm1BW1PG_Gf5NIrWhXz-CG26lw/viewform"
+    },
+    {
+        title: "Arduino Workshop",
+        description: "Join us for a special two day workshop to welcome and empower our Freshers. Start your jouney with insights, connections and inspiration!",
+        time: "2nd & 3rd September 2024",
+        image: "/events/workshop poster.png",
+        registration: "₹199 per person",
+        venue: "TP 501 - 502",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdji2K-tgDX61SsVSYTe-WEPnpi57_ZSC8haPAapF6qjHTQ2A/viewform"
     }
 ]
 

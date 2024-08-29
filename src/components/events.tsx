@@ -2,6 +2,7 @@ import React from "react";
 import { events } from "@/utils/data";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,6 +16,7 @@ type Event = {
   image: string;
   registration: string;
   venue: string;
+  link: string;
 };
 
 const EventCard = async (event: Event) => {
@@ -49,13 +51,13 @@ const EventCard = async (event: Event) => {
               <p className="text-xs lg:text-sm">{event.time}</p>
             </div>
             <div className="w-full h-full bg-slate-500/30 backdrop-blur-xl grid place-items-center rounded-lg p-4">
-              <h1 className="text-2xl lg:text-4xl">Registration</h1>
-              <p className="text-xs lg:text-sm">{event.registration}</p>
-            </div>
-            <div className="w-full h-full bg-slate-500/30 backdrop-blur-xl grid place-items-center rounded-lg p-4">
               <h1 className="text-2xl lg:text-4xl">Venue</h1>
               <p className="text-xs lg:text-sm">{event.venue}</p>
             </div>
+            <Link className="w-full h-full bg-slate-500/30 backdrop-blur-xl grid place-items-center rounded-lg p-4 hover:bg-slate-400/50 duration-500" href={event.link} target="_blank">
+              <h1 className="text-2xl lg:text-4xl">Registration</h1>
+              <p className="text-xs lg:text-sm">{event.registration}</p>
+            </Link>
           </div>
         </div>
       </div>
