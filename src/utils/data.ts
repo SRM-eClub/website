@@ -13,7 +13,7 @@ export const events = [
         description: "Sparkle creativity, ignite innovation! Join us for an electrifying showcase on Arduino Day, where your projects illuminate the possibilities with our beloved microcontrollers.",
         time: "3rd September 2024",
         image: "/events/expo poster.png",
-        registration: "₹100 per team",
+        registration: "Free",
         venue: "UB Lobby",
         link: "https://docs.google.com/forms/d/1SFOR5G9cibjiU4SAHLYSWfuwpJnyDsgqdJTMOgqzavs/viewform?ts=65eca982&edit_requested=true"
     },
