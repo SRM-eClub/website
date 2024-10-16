@@ -5,11 +5,11 @@ import Navbar from "../components/navbar";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 // import Project from "../components/project";
-import Events from "@/components/events";
-import { users } from "@/utils/data";
-import UserCard from "@/components/user_card";
+import Events from "../components/events";
+import { users } from "../utils/data";
+import UserCard from "../components/user_card";
 import Image from "next/image";
-import Footer from "@/components/footer";
+import Footer from "../components/footer";
 
 const header_font = Poppins({
   subsets: ["latin"],
