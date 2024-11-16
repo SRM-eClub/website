@@ -1,4 +1,4 @@
-import { sponsors } from "@/utils/data"
+import { sponsors } from "../utils/data"
 import Link from "next/link";
 
 
