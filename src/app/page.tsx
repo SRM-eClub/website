@@ -156,10 +156,10 @@ export default function Page() {
       >
         <Project font={about_heading_font.className}/>
       </section> */}
-      <section id="events" className="bg-gradient-to-tl from-gray-800 to-black">
+      {/* <section id="events" className="bg-gradient-to-tl from-gray-800 to-black">
         <Events font={about_heading_font.className} />
-      </section>
-      <section id="team" className="bg-gradient-to-bl from-gray-800 to-black">
+      </section> */}
+      <section id="team" className="bg-gradient-to-t from-gray-800 to-black">
         <div className="text-center text-3xl lg:text-6xl">
           <h1 className={about_heading_font.className}>Meet the Team</h1>
         </div>
@@ -180,7 +180,7 @@ export default function Page() {
       </section> */}
       <section
         id="contact"
-        className="bg-gradient-to-br from-black to-gray-800 p-4"
+        className="bg-gradient-to-t from-black to-gray-800 p-4"
       >
         <Footer />
       </section>

@@ -57,7 +57,7 @@ export const sponsors = [
 
 export const users = [
     {
-        name: "A. V. M. Manikandan",
+        name: "Dr. A. V. M. Manikandan",
         description: "Faculty",
         linkedin: "https://www.linkedin.com/in/manikandan-avm-68444591?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         email: "manikanm@srmist.edu.in",
@@ -65,71 +65,56 @@ export const users = [
 
     },
     {
-        name: "Sayak Roychowdury",
-        linkedin: "https://www.linkedin.com/in/sayakrc/",
-        email: "sr0206@srmist.edu.in",
-        photo: "/teams/sayak.jpeg",
-        description: "Head"
-    },
-    {
-        name: "Gowtham A",
-        linkedin: "https://www.linkedin.com/in/gowtham-a-9b25ba221?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        email: "aa8366@srmist.edu.in",
-        photo: "/teams/gowtham.jpeg",
-        description: "Head"
-    },
-    {
-        name: "Jai Surya",
-        linkedin: "https://www.linkedin.com/in/jai-surya-s-a59954229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        email: "js7841@srmist.edu.in",
-        description: "Technical Head",
-        photo: "/teams/jai_surya.jpeg"
-    },
-    {
         name: "Pragati Prithvi",
         linkedin: "https://www.linkedin.com/in/pragati-prithvi-0a20b4251/",
         email: "pp5153@srmist.edu.in",
         photo: "/teams/pragati.jpeg",
-        description: "ESI Lead"
+        description: "Tech Head"
     },
     {
-        name: "Tejas M. K.",
-        description: "Robotics Lead",
-        linkedin: "https://www.linkedin.com/in/tejas-mk-37151324b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        email: "tm2418@srmist.edu.in",
-        photo: "/teams/tejas.jpeg"
-    },
-    {
-        name: "Nupur Chatterjee",
-        description: "ML Lead",
-        email: "np0255@srmist.edu.in",
-        linkedin: "https://www.linkedin.com/in/nupurchatterjee09/",
-        photo: "/teams/nupur.jpeg"
+        name: "Mowneesh Varati",
+        linkedin: "https://www.linkedin.com/in/mowneesh-varati-187917276/",
+        email: "mv5521@srmist.edu.in",
+        photo: "/teams/mowneesh.jpg",
+        description: "Non-Tech Head"
     },
     {
         name: "Sonakshi Srivastava",
         photo: "/teams/sonakshi.jpeg",
-        description: "Corporate Lead",
+        description: "ESI & Robotics Lead",
         linkedin: "https://www.linkedin.com/in/srivastava-sonakshi/",
         email: "ss8768@srmist.edu.in"
     },
     {
-        name: "Alapan konar",
-        photo: "/teams/alapan.jpeg",
-        description: "Event Management Lead",
-        linkedin: "https://www.linkedin.com/in/alapan-konar-a5145a226/"
+        name: "Sriram S",
+        photo: "/teams/sriram.jpg",
+        description: "ESI & Robotics Lead",
+        linkedin: "https://www.linkedin.com/in/sriram-s-1b1b3b1b1/",
+        email: ""
+    },
+    {
+        name: "Ujan Pradhan",
+        photo: "/teams/ujan.jpg",
+        description: "ML Head",
+        linkedin: "https://www.linkedin.com/in/ujan-pradhan-9366a9248/",
+        email: "up0625@srmist.edu.in"
+    },
+    {
+        name: "Lenin Valentine",
+        photo: "/teams/lenin.jpg",
+        description: "VLSI HEAD",
+        linkedin: "https://www.linkedin.com/in/leninvalentine/"
+    },
+    {
+        name: "Arshad Ahmed B",
+        photo: "/teams/arshad.jpg",
+        description: "Corporate & Event Management Head",
+        linkedin: "https://www.linkedin.com/in/arshadahmedb/",
     },
     {
         name: "Muhammed Akmal",
         linkedin: "https://www.linkedin.com/in/muhammed-akmal-2399b1283/",
         photo: "/teams/akmal.jpg",
         description: "Head of Editorial"
-    },
-    {
-        name: "Shreyas Balihallimath",
-        linkedin: "https://www.linkedin.com/in/shreyas-balihallimath-27485a23a?",
-        email: "sl4865@srmist.edu.in",
-        photo: "/teams/shreyas.jpeg",
-        description: "VLSI Lead"
     }
 ]

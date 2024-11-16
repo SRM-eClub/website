@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default async function Footer() {
   return (
-    <footer className="footer footer-center bg-primary text-primary-content p-10">
+    <footer className="footer footer-center bg-primary text-primary-content p-10 rounded-2xl">
       <div className="grid w-full grid-cols-1 lg:grid-cols-2">
         <div className="grid place-items-center">
           <aside className="grid place-items-center ">

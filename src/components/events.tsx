@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { events } from "../utils/data";
 import { Poppins } from "next/font/google";
@@ -19,7 +20,7 @@ type Event = {
   link: string;
 };
 
-const EventCard = async (event: Event) => {
+const EventCard = (event: Event) => {
   return (
     <div
       className={
